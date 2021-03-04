@@ -16,5 +16,11 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-
+  board.each do |turn|
+    WIN_COMBINATIONS.all? do |combo|
+      if combo == turn
+        return combo
+      end
+    end
+  end
 end
