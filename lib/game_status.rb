@@ -63,5 +63,3 @@ def winner(board)
     return "O"
   end
 end
-
-puts winner(["X", "O", " ", " ", " ", " ", " ", "O", "X"])
