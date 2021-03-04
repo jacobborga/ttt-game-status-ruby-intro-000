@@ -16,12 +16,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  counter = 0
   WIN_COMBINATIONS.each do |combo|
-    if board == combo
-      return combo
-    end
-    counter += 1
+    puts combo
   end
-  return false
 end
+
+won?(nil)
