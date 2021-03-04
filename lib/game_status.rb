@@ -30,4 +30,4 @@ def won?(board)
 end
 
 # Draw
-won(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
+puts won?(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
