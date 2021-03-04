@@ -63,3 +63,5 @@ def winner(board)
     return nil
   end
 end
+
+puts winner(["X", "O", " ", " ", " ", " ", " ", "O", "X"])
