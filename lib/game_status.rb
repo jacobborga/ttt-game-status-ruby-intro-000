@@ -17,10 +17,10 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   WIN_COMBINATIONS.all? do |combo|
-    if board == combo 
-      return combo 
-    else 
-      return false 
+    if board == combo
+      return combo
+    else
+      return false
     end
   end
 end
