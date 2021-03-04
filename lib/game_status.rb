@@ -18,8 +18,6 @@ WIN_COMBINATIONS = [
 def won?(board)
   counter = 0
   WIN_COMBINATIONS.each do |combo|
-    puts combo
-    puts board
     if board == combo
       return combo
     end
@@ -27,6 +25,3 @@ def won?(board)
   end
   return false
 end
-
-# Draw
-puts won?(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
