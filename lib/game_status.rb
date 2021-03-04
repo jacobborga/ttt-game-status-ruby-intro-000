@@ -18,6 +18,8 @@ WIN_COMBINATIONS = [
 def won?(board)
   counter = 0
   WIN_COMBINATIONS.each do |combo|
+    puts combo
+    puts board
     if board == combo
       return combo
     else
