@@ -33,4 +33,3 @@ def won?(board)
   end
 end
 
-won?(nil)
