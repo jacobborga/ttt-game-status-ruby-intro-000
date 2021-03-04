@@ -22,11 +22,10 @@ def won?(board)
     puts board
     if board == combo
       return combo
-    else
-      return false
     end
     counter += 1
   end
+  return false
 end
 
 # Draw
