@@ -16,7 +16,9 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  print WIN_COMBINATIONS[0]
+  WIN_COMBINATIONS.each do |combo|
+    print combo
+  end
 end
 
 won?(nil)
