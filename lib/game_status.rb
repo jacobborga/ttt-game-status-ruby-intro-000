@@ -55,13 +55,12 @@ end
 
 def winner(board)
   win_combo = won?(board)
-  puts win_combo
-  if (board[win_combo[0]] == "X" && board[win_combo[1]] == "X" && board[win_combo[2]] == "X")
+  if !win_combo
+    return nil
+  elsif (board[win_combo[0]] == "X" && board[win_combo[1]] == "X" && board[win_combo[2]] == "X")
     return "X"
   elsif (board[win_combo[0]] == "O" && board[win_combo[1]] == "O" && board[win_combo[2]] == "O")
     return "O"
-  else
-    return nil
   end
 end
 
