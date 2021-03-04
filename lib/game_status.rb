@@ -18,6 +18,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.all? do |combo|
     if board == combo
+      print combo
       return combo
     else
       return false
