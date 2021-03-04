@@ -28,3 +28,5 @@ def won?(board)
     counter += 1
   end
 end
+
+won(["X", "O", "X", "O", "X", "X", "O", "X", "O"])
