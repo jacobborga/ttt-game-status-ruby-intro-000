@@ -16,12 +16,13 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  counter = 0
   WIN_COMBINATIONS.all? do |combo|
     if board == combo
-      print combo
-      return combo
+      return WIN_COMBINATIONS[counter]
     else
       return false
     end
+    counter += 1
   end
 end
